@@ -19,10 +19,16 @@ export default {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        rainbow: {
+          "0%": { "background-position": "0%" },
+          "100%": { "background-position": "200%" },
+        },
+        
       },
       animation: {
         'text-reveal': 'textReveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards',
         'fade-in': 'fadeIn 0.5s ease-in-out 1.5s forwards',
+        rainbow: "rainbow var(--speed, 2s) infinite linear",
       },
     },
   },

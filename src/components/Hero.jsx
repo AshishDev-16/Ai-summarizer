@@ -1,6 +1,7 @@
 import { logo } from "../assets";
 import { DiGithubBadge } from "react-icons/di";
 import { CiStar } from "react-icons/ci";
+import { RainbowButton } from "./magicui/RainbowButton";
 
 const Hero = () => {
   return (
@@ -8,23 +9,23 @@ const Hero = () => {
       <nav className='flex justify-between items-center w-full mb-10 pt-3'>
         <img src={logo} alt='sumz_logo' className='w-28 object-contain' />
 
-        <button
+        <RainbowButton
           type='button'
           onClick={() =>
             window.open("https://github.com/AshishXGitHub", "_blank")
           }
-          className='black_btn flex items-center gap-1'
+          
         >
           <DiGithubBadge size={23} />
           Star on GitHub
           <CiStar size={15} />
-        </button>
+        </RainbowButton>
       </nav>
 
       <h1 className='head_text'>
         <span className='animate-text-reveal'>
           Summarize Articles with <br className='max-md:hidden' />
-          <span className='Ocean_gradient'>OpenAI GPT-4</span>
+          <span className='deep_gradient'>OpenAI GPT-4</span>
         </span>
       </h1>
       <h2 className='desc'>
