@@ -1,4 +1,3 @@
-
 import { logo } from "../assets";
 import { DiGithubBadge } from "react-icons/di";
 import { CiStar } from "react-icons/ci";
@@ -23,8 +22,10 @@ const Hero = () => {
       </nav>
 
       <h1 className='head_text'>
-        Summarize Articles with <br className='max-md:hidden' />
-        <span className='orange_gradient '>OpenAI GPT-4</span>
+        <span className='animate-text-reveal'>
+          Summarize Articles with <br className='max-md:hidden' />
+          <span className='Ocean_gradient'>OpenAI GPT-4</span>
+        </span>
       </h1>
       <h2 className='desc'>
         Simplify your reading with Summize, an open-source article summarizer

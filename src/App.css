@@ -114,3 +114,55 @@
 .summary_box {
   @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
 }
+
+.ai_gradient {
+  @apply bg-gradient-to-r from-purple-600 via-blue-500 to-green-400 inline-block text-transparent bg-clip-text;
+}
+.deep_gradient {
+  @apply bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 inline-block text-transparent bg-clip-text;
+}
+
+.Sunset_gradient {
+  @apply bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 inline-block text-transparent bg-clip-text;
+}
+
+.Forest_gradient {
+  @apply bg-gradient-to-r from-emerald-500 to-lime-600 inline-block text-transparent bg-clip-text;
+}
+
+.Rainbow_gradient {
+  @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text;
+}
+
+.Ocean_gradient {
+  @apply bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 inline-block text-transparent bg-clip-text;
+}
+
+@keyframes textReveal {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animate-text-reveal {
+  display: inline-block;
+  animation: textReveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
+}
+
+.animate-text-reveal > * {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
