@@ -1,5 +1,7 @@
 
 import { logo } from "../assets";
+import { DiGithubBadge } from "react-icons/di";
+import { CiStar } from "react-icons/ci";
 
 const Hero = () => {
   return (
@@ -12,9 +14,11 @@ const Hero = () => {
           onClick={() =>
             window.open("https://github.com/AshishXGitHub", "_blank")
           }
-          className='black_btn'
+          className='black_btn flex items-center gap-1'
         >
-          GitHub
+          <DiGithubBadge size={23} />
+          Star on GitHub
+          <CiStar size={15} />
         </button>
       </nav>
 
